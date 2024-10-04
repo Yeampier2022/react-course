@@ -1,9 +1,7 @@
+import Layout from "../../Components/Layout";
+
 function Signin() {
-  return (
-    <div>
-      <h1 className="bg-red-700 ">Signin</h1>
-    </div>
-  );
+  return <Layout>Signin</Layout>;
 }
 
 export default Signin;

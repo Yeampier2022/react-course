@@ -6,6 +6,7 @@ import Myorder from "../Myorder";
 import Myorders from "../Myorders";
 import Notfound from "../Notfound";
 import Signin from "../Signin";
+import Navbar from "../../Components/Navbar";
 import "./App.css";
 
 const AppRoutes = () => {
@@ -15,19 +16,19 @@ const AppRoutes = () => {
       element: <Home />,
     },
     {
-      path: "/myaccount",
+      path: "/my-account",
       element: <Myaccount />,
     },
     {
-      path: "/myorder",
+      path: "/my-order",
       element: <Myorder />,
     },
     {
-      path: "/myorders",
+      path: "/my-orders",
       element: <Myorders />,
     },
     {
-      path: "/signin",
+      path: "/sign-in",
       element: <Signin />,
     },
     {
@@ -42,6 +43,7 @@ const App = () => {
     <div className="bg-red-400">
       <BrowserRouter>
         <AppRoutes />
+        <Navbar />
       </BrowserRouter>
     </div>
   );
