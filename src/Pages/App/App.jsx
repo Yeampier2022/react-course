@@ -40,7 +40,7 @@ const AppRoutes = () => {
 };
 const App = () => {
   return (
-    <div className="bg-red-400">
+    <div className="">
       <BrowserRouter>
         <AppRoutes />
         <Navbar />
